@@ -5,9 +5,9 @@ import Game from './Game';
 
 
 export default class App extends React.Component {
-    render() {
-        return (
-            <Game/>
-        )
-    }
+	render() {
+		return (
+			<Game/>
+		)
+	}	
 }
