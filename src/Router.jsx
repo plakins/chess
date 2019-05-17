@@ -7,7 +7,7 @@ export function Router(props) {
 		<BrowserRouter>
 			<Switch>
 				<Route path="/" exact component={App}/>
-				<Route path="/:gameId" exact component={App}/>
+				<Route path="/:gameId/:token" exact component={App}/>
 			</Switch>
 		</BrowserRouter>
 	)

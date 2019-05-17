@@ -1,8 +1,9 @@
 import * as figures from './figures';
 
 export default class Chess {
-	constructor(el, moveCallback) {
+	constructor(el, side, moveCallback) {
 		this.canvas = el;
+		this.side = side;
 		this.moveCallback = moveCallback;
 		this.canvas.width = "400";
 		this.canvas.height = "400";
@@ -11,7 +12,6 @@ export default class Chess {
 		this.cellSize = 50;
 		this.black = "#b58763";
 		this.white ="#f0dab5";
-		figures
 		this.board = figures.board();
 		this.selectionBoard = figures.selectionBoard();
 		this.selected = false;
@@ -26,6 +26,9 @@ export default class Chess {
 	move = (data) => {
 		this.board[data.to.y][data.to.x] = this.board[data.from.y][data.from.x];
 		this.board[data.from.y][data.from.x] = 0;
+		this.selected = false;
+		this.turn = this.turn === figures.WHITE ? figures.BLACK : figures.WHITE;
+		this.clearSelection();
 		this.render();
 	}
 
@@ -58,7 +61,7 @@ export default class Chess {
 		}
 
 		if (this.board[y][x] !== 0) {
-			if (this.board[y][x].color !== this.turn) {
+			if (this.board[y][x].color !== this.side || this.turn !== this.side) {
 				return;
 			}
 			this.selected = true;

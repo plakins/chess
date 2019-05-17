@@ -15,7 +15,7 @@ export const BLACK_PAWN = {
 	type : PAWN,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/black/pawn.svg';
+		image.src = '/src/images/black/pawn.svg';
 		return image;
 	}(),
 };
@@ -25,7 +25,7 @@ export const BLACK_ROOK = {
 	type : ROOK,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/black/rook.svg';
+		image.src = '/src/images/black/rook.svg';
 		return image;
 	}(),
 };
@@ -35,7 +35,7 @@ export const BLACK_KNIGHT = {
 	type : KNIGHT,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/black/knight.svg';
+		image.src = '/src/images/black/knight.svg';
 		return image;
 	}(),
 };
@@ -45,7 +45,7 @@ export const BLACK_BISHOP = {
 	type : BISHOP,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/black/bishop.svg';
+		image.src = '/src/images/black/bishop.svg';
 		return image;
 	}(),
 };
@@ -55,7 +55,7 @@ export const BLACK_KING = {
 	type : KING,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/black/king.svg';
+		image.src = '/src/images/black/king.svg';
 		return image;
 	}(),
 };
@@ -65,7 +65,7 @@ export const BLACK_QUEEN = {
 	type : QUEEN,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/black/queen.svg';
+		image.src = '/src/images/black/queen.svg';
 		return image;
 	}(),
 };
@@ -77,7 +77,7 @@ export const WHITE_PAWN = {
 	type : PAWN,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/white/pawn.svg';
+		image.src = '/src/images/white/pawn.svg';
 		return image;
 	}(),
 };
@@ -87,7 +87,7 @@ export const WHITE_ROOK = {
 	type : ROOK,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/white/rook.svg';
+		image.src = '/src/images/white/rook.svg';
 		return image;
 	}(),
 };
@@ -97,7 +97,7 @@ export const WHITE_KNIGHT = {
 	type : KNIGHT,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/white/knight.svg';
+		image.src = '/src/images/white/knight.svg';
 		return image;
 	}(),
 };
@@ -107,7 +107,7 @@ export const WHITE_BISHOP = {
 	type : BISHOP,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/white/bishop.svg';
+		image.src = '/src/images/white/bishop.svg';
 		return image;
 	}(),
 };
@@ -117,7 +117,7 @@ export const WHITE_KING = {
 	type : KING,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/white/king.svg';
+		image.src = '/src/images/white/king.svg';
 		return image;
 	}(),
 };
@@ -127,7 +127,7 @@ export const WHITE_QUEEN = {
 	type : QUEEN,
 	img : function() {
 		let image = new Image(50, 50);
-		image.src = './src/images/white/queen.svg';
+		image.src = '/src/images/white/queen.svg';
 		return image;
 	}(),
 };
